@@ -1,5 +1,5 @@
 import './loadEnvironment.js';
-import express, { request, response} from 'express';
+import express, { Request, Response } from 'express';
 
 // Initialize express
 const app = express();
@@ -34,13 +34,13 @@ const alumnoObj : object = alumnos.map(persona => {
   return { nom, cognom }; // Creamos y devolvemos el objeto
 });
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.send(introMsn);
 });
 
-app.get('/ping', (req, res) => res.send('pong'));
+app.get('/ping', (req: Request, res: Response) => res.send('pong'));
 
-app.get('/alumnos', (req, res) => {
+app.get('/alumnos', (req: Request, res: Response) => {
   res.json({
     alumnes:alumnoObj,
     totalAlumnes:totalAlumnos

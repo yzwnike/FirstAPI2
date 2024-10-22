@@ -11,7 +11,7 @@
     "strictNullChecks": true /* When type checking, take into account 'null' and 'undefined'. */,
     "sourceMap": true /* Create source map files for emitted JavaScript files. */,
     "skipLibCheck": true /* Skip type checking of declaration files. */,
-    "types": ["node"]
+    "types": ["node", "express"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
