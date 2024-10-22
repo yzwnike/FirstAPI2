@@ -10,7 +10,8 @@
     "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied `any` type. */,
     "strictNullChecks": true /* When type checking, take into account 'null' and 'undefined'. */,
     "sourceMap": true /* Create source map files for emitted JavaScript files. */,
-    "skipLibCheck": true /* Skip type checking of declaration files. */
+    "skipLibCheck": true /* Skip type checking of declaration files. */,
+    "types": ["node"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
